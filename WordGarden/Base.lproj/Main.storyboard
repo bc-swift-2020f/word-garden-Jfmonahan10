@@ -87,6 +87,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
+                                            <action selector="doneKeyPressedUpon:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="Lv0-fq-Rty"/>
                                             <action selector="guessLetterFieldChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="tAF-fg-zxB"/>
                                         </connections>
                                     </textField>
@@ -94,7 +95,6 @@
                                         <rect key="frame" x="56" y="0.0" width="100" height="30"/>
                                         <state key="normal" title="Guess a Letter"/>
                                         <connections>
-                                            <action selector="doneKeyPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="ldM-Mb-OqQ"/>
                                             <action selector="guessLetterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vBW-oH-dhi"/>
                                         </connections>
                                     </button>
@@ -106,10 +106,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vus-yy-R46">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="flower8" translatesAutoresizingMaskIntoConstraints="NO" id="Vus-yy-R46">
                                 <rect key="frame" x="0.0" y="259.5" width="320" height="308.5"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1px-xc-rg1">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1px-xc-rg1">
                                 <rect key="frame" x="108" y="193" width="90" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JVa-8T-YsO"/>
@@ -135,7 +135,7 @@
                             <constraint firstItem="5qv-ge-nvx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="T9R-Jo-8t9"/>
                             <constraint firstItem="iqO-4g-qXd" firstAttribute="top" secondItem="fed-43-UuV" secondAttribute="bottom" constant="8" id="Urg-JA-8sL"/>
                             <constraint firstItem="Vus-yy-R46" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="VlJ-PX-2IA"/>
-                            <constraint firstItem="1px-xc-rg1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bkB-dM-EhF"/>
+                            <constraint firstItem="1px-xc-rg1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-7" id="bkB-dM-EhF"/>
                             <constraint firstItem="fed-43-UuV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cjJ-Gc-Q3G"/>
                             <constraint firstItem="5qv-ge-nvx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="4" id="lUY-8o-K2O"/>
                             <constraint firstItem="1px-xc-rg1" firstAttribute="top" secondItem="iqO-4g-qXd" secondAttribute="bottom" constant="8" id="oAX-A3-lDF"/>
@@ -164,4 +164,7 @@
             <point key="canvasLocation" x="138.75" y="126.7605633802817"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="flower8" width="613.5" height="1082"/>
+    </resources>
 </document>
